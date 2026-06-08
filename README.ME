@@ -1,0 +1,84 @@
+# Budget Calculator
+
+A responsive, interactive personal budget calculator built with vanilla HTML, CSS, and JavaScript.
+
+
+
+---
+
+## What Problem It Solves
+
+Most people track their budget in a spreadsheet — but spreadsheets aren't interactive, don't visualize your spending, and don't work well on mobile. This app gives anyone a fast, visual way to enter their income and expenses, see where their money is going, and track progress toward a savings goal — all without signing up or installing anything.
+
+---
+
+## Features
+
+- **Income & expense tracking** — add, edit, and remove entries in real time
+- **Category tags** — group expenses by Housing, Food, Transport, Health, Entertainment, and Other
+- **Expense breakdown chart** — pie chart that groups spending by category with consistent colors
+- **Savings goal tracker** — set a target savings rate and watch a color-coded progress bar update live
+- **Monthly / Annual toggle** — switch between monthly and annual view of all totals
+- **Currency selector** — supports ₦ Naira, $ Dollar, £ Pound, and € Euro
+- **Dark mode** — full dark theme with preference saved to localStorage
+- **Animated totals** — numbers count up smoothly when values change
+- **Empty state guidance** — helpful prompts when lists are empty
+- **Color-coded rows** — green tint for income, red tint for expenses
+- **CSV export** — download your budget data as a spreadsheet
+- **Auto-save** — data persists in localStorage between sessions
+- **Responsive design** — works on mobile, tablet, and desktop
+
+---
+
+## Built With
+
+- **HTML5** — semantic markup and accessibility attributes
+- **CSS3** — CSS custom properties (variables) for theming, CSS Grid for layout, media queries for responsiveness
+- **Vanilla JavaScript (ES6+)** — no frameworks, no dependencies
+- **Chart.js** — pie chart for expense breakdown
+
+---
+
+## What I Learned
+
+This project was my first substantial front-end build after transitioning from a non-technical background. Key things I picked up:
+
+- **DOM manipulation** — building dynamic UI elements entirely in JavaScript without a framework
+- **localStorage** — persisting app state across browser sessions
+- **CSS variables** — using custom properties to power a full dark/light theme switch from a single class toggle
+- **requestAnimationFrame** — implementing smooth number animations without any animation library
+- **Debugging** — tracking down real bugs like a broken CSS `border` shorthand split across lines, a `\\n` vs `\n` CSV export issue, and a script loading order problem that silently killed all event listeners
+- **Responsive design** — adapting a two-column desktop layout to stack cleanly on mobile
+
+---
+
+## Project Structure
+
+```
+budget-calculator/
+├── index.html       # App structure and markup
+├── styles.css       # All styling including dark mode and responsive breakpoints
+├── script.js        # All app logic — calculations, DOM, chart, persistence
+└── README.md        # This file
+```
+
+---
+
+## Getting Started
+
+No install needed. Just clone or download the repo and open `index.html` in any modern browser.
+
+```bash
+git clone https://github.com/your-github-username/budget-calculator.git
+cd budget-calculator
+open index.html
+```
+
+Or use the **Live Demo** link above to try it instantly.
+
+---
+
+## Author
+
+**Rafeeq** — Professional transitioning into data analytics and web development.
+Building a portfolio of practical tools using Python, Excel, Power BI, and JavaScript.
