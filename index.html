@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Budget Calculator - Portfolio</title>
+        <title>Spendwise - Personal Budget Calculator</title>
         <link rel="stylesheet" href="styles.css">
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
         <div class="wrap">
             <header>
-                <h1>Budget Calculator</h1>
-                <div class="muted">Project 1</div>
+                <h1>Spendwise</h1>
+                <div class="muted">Track income, expenses and savings goals</div>
 
                 <select id="currency-select" class="currency-select">
                     <option value="₦">₦ Naira</option>
@@ -30,52 +30,52 @@
 
             <div class="grid">
                 <section class="card" aria-labelledby="budgetFormTitle">
-                  <h2 id="budgetFormTitle" style="margin:0 0 8px 0">Inputs</h2>
+                    <h2 id="budgetFormTitle" style="margin:0 0 8px 0">Inputs</h2>
 
-                  <div>
-                    <label for="income-add-name">Income Source</label>
-                    <div id="incomes-list" class="list" aria aria-live="polite"></div>
-                    <div class="controls">
-                        <button id="add-income" class="btn btn-ghost">+ Add income</button>
-                        <button id="clear-all" class="btn">Clear</button>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label for="expense-add-name">Expenses</label>
-                    <div id="expenses-list" class="list" aria-live="polite"></div>
-                    <div class="controls">
-                        <button id="add-expense" class="btn btn-ghost">+ Add expense</button>
-                        <button id="import-sample" class="btn">Load Sample</button>
-                    </div>
-                  </div>
-
-                  <div class="summary" aria-live="polite" style="margin-top: 18px">
-                    <div class="muted">Totals</div>
-                    <div class="big">Income: <span class="currency-symbol">₦</span><span id="total-income">0.00</span></div>
-                    <div class="big">Expenses: <span class="currency-symbol">₦</span><span id="total-expenses">0.00</span></div>
-                    <div class="big">Net Savings: <span class="currency-symbol">₦</span><span id="net-savings">0.00</span></div>
-                    <div class="big">Savings rate: <span id="savings-rate">0%</span></div>
-                    <div class = "goal-section">
-                        <div class = "goal-header">
-                            <label for = "goal-input" class = "goal-label">Savings goal</label>
-                            <span id = "goal-status" class = "goal-status"></span>
+                    <div>
+                        <label for="income-add-name">Income Source</label>
+                        <div id="incomes-list" class="list" aria aria-live="polite"></div>
+                        <div class="controls">
+                            <button id="add-income" class="btn btn-ghost">+ Add income</button>
+                            <button id="clear-all" class="btn">Clear</button>
                         </div>
-                        <div class = "goal-input-row">
-                            <input type = "number" id = "goal-input" class = "goal-input" min="1" max="100" value="20">
-                            <span class="goal-pct-label">%</span>
-                        </div>
-                        <div class="progress-track">
-                            <div id = "progress-bar" class = "progress-bar"></div>
-                        </div>
-                        <div id = "goal-message" class = "goal-message"></div>
                     </div>
 
-                    <div class="actions">
-                        <button id ="export-csv" class="btn btn-primary">Export Csv</button>
-                        <button id="save-now" class="btn btn-ghost">Save Csv</button>
+                    <div>
+                        <label for="expense-add-name">Expenses</label>
+                        <div id="expenses-list" class="list" aria-live="polite"></div>
+                        <div class="controls">
+                            <button id="add-expense" class="btn btn-ghost">+ Add expense</button>
+                            <button id="import-sample" class="btn">Load Sample</button>
+                        </div>
                     </div>
-                  </div>
+
+                    <div class="summary" aria-live="polite" style="margin-top: 18px">
+                        <div class="muted">Totals</div>
+                        <div class="big">Income: <span class="currency-symbol">₦</span><span id="total-income">0.00</span></div>
+                        <div class="big">Expenses: <span class="currency-symbol">₦</span><span id="total-expenses">0.00</span></div>
+                        <div class="big">Net Savings: <span class="currency-symbol">₦</span><span id="net-savings">0.00</span></div>
+                        <div class="big">Savings rate: <span id="savings-rate">0%</span></div>
+                        <div class = "goal-section">
+                            <div class = "goal-header">
+                                <label for = "goal-input" class = "goal-label">Savings goal</label>
+                                <span id = "goal-status" class = "goal-status"></span>
+                            </div>
+                            <div class = "goal-input-row">
+                                <input type = "number" id = "goal-input" class = "goal-input" min="1" max="100" value="20">
+                                <span class="goal-pct-label">%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div id = "progress-bar" class = "progress-bar"></div>
+                            </div>
+                            <div id = "goal-message" class = "goal-message"></div>
+                        </div>
+
+                        <div class="actions">
+                            <button id ="export-csv" class="btn btn-primary">Export Csv</button>
+                            <button id="save-now" class="btn btn-ghost">Save Csv</button>
+                        </div>
+                    </div>
                 </section>
 
                 <aside class="card">
